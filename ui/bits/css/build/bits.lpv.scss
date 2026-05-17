@@ -18,7 +18,9 @@
 
   transform: translate(-50%, -50%);
   display: block;
-  padding: 1.5em 3em;
+  // Use responsive horizontal padding so the Start button doesn't overflow on narrow viewports
+  // Keeps 1.5em vertical padding, clamps horizontal padding between 1.5em and 3em
+  padding: 1.5em clamp(1.5em, 5vw, 3em);
   text-decoration: none;
   font-size: 1.5em;
   white-space: normal;
